@@ -13,4 +13,4 @@ mkxemw
 
 Do not forget to finish this week's homework - edit this file and put the
 name you use on meetup.com into this file:
-Sheeri (this is my homework test)
+(your name here)
