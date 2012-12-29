@@ -1,0 +1,16 @@
+If you can see this locally, you have completed half the homework so far.
+If you like, you can go to 
+https://badgus-dev.allizom.org/en-US/
+to claim your badge for successfully checking out the github repository.
+
+You will have to set up a BrowserID account if you want to claim your badge.
+Getting badges is not necessary to complete MySQL Marinate, but it is fun! 
+The meetup group and organizers will never see your e-mail address, and 
+BrowserID is being used increasingly for logins on the web.
+
+Once you are logged in, you can use claim code to claim your badge:
+mkxemw
+
+Do not forget to finish this week's homework - edit this file and put the
+name you use on meetup.com into this file:
+(your name here)
