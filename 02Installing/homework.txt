@@ -15,3 +15,5 @@ Additional Exercises (not in the book):
  (The goal is to be easy to install it again on a similar machine.)
 
 2) Document where important files should be.
+
+Do not forget to do a pull request when your homework is complete.
