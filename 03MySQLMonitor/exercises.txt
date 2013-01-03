@@ -1,0 +1,9 @@
+1. What do we mean when we say that MySQL has a client-server architecture?
+
+2. Use the monitor help to look up information on the SELECT statement. (We’ll discuss SELECT in detail in Chapter 5.)
+
+3. What is the difference between using the monitor in interactive mode and using
+the monitor in batch mode?
+
+4. What do the monitor user, password, and database options do?
+
