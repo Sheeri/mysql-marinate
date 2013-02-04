@@ -1,0 +1,32 @@
+Chapter 6 Homework
+
+All exercises here concern the music database. 
+
+1. You’ve decided to store more information about artists and albums. Specifically,
+for artists, you want to store the names of people who have worked with the artist
+(for example, vocalists, guitarists, trumpeters, and drummers), when they began
+working with the artist, and when they stopped working with the artist (if they
+have done so).
+
+For albums, you want to store the name of the album producer, when the album
+was released, and where the album was recorded. Design tables or columns that
+can store this information, and explain the advantages and disadvantages of your
+design. Choose the column types you need, explaining the advantages and disad-
+vantages of your choices.
+
+2. There are five types for storing temporal data: DATETIME, DATE, TIME, YEAR, and
+TIMESTAMP. Explain what each is used for, and give an example of a situation in
+which you would choose to use it. Note that http://palominodb.com/blog/2011/05/23/datetime-vs-timestamp
+has some useful information too.
+
+3. You’ve decided to use the AUTO_INCREMENT feature. List the three requirements that
+must be met by the column you’re applying it to.
+
+4. Why can only one column in a table have the AUTO_INCREMENT feature?
+
+5. Using the monitor, create a table with the following statement:
+mysql> CREATE TABLE exercise (field1 INT(3));
+Using the ALTER TABLE statement, make field1 the primary key, carrying out any
+additional steps you need to make this possible. Add a second column, field2, of
+type CHAR(64) with a DEFAULT 5 clause. Create an index on a prefix of 10 characters
+from field2.
