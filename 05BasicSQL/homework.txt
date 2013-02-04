@@ -1,0 +1,39 @@
+All exercises here concern the music database, which is available at http://tahaghoghi.com/LearningMySQL/Downloads/Files/Data/SQL_files_with_foreign_key_references/music.sql
+
+I strongly recommend theta join style as per http://code.openark.org/blog/mysql/mysql-joins-on-vs-using-vs-theta-style - the nutshell is that ANSI style is like this:
+
+SELECT ... FROM table1 INNER JOIN table2 WHERE field1=field2 AND filter=something;
+
+Theta style is like this:
+SELECT ... FROM table1 INNER JOIN table2 ON (field1=field2) WHERE filter=something;
+
+The reason for this is that when you have many tables joined it's easier to see the join clause in ON or USING with theta style. 
+If you join many tables and use ANSI style, where everything is in the WHERE clause, it's possible to forget some of the join clauses 
+in the WHERE. If you put the join clauses in the JOIN part, it's way more readable.
+
+1) Use one or more SELECT statements to find out how many tracks are on New Order's Brotherhood album.
+
+2) Using a join, list the albums that we own by the band New Order
+
+3) With INSERT statements, add the artist Leftfield to the database. For this new artist, add the album "Leftism" that has
+the following tracks:
+a. Release the Pressure (Time: 7.39)
+b. Afro-Melt (Time: 7.33)
+c. Melt (Time: 5.21)
+d. Song of Life (Time: 6.55)
+e. Original (Time: 6.00)
+f. Black Flute (Time: 3.46)
+g. Space Shanty (Time: 7.15)
+h. Inspection Check One (Time: 6.30)
+i. Storm 3000 (Time: 5.44)
+j. Open Up (Time: 6.52)
+k. 21st Century Poem (Time: 5.42)
+l. Bonus Track (Time: 1.22)
+
+The answer to this question should be the INSERT statement(s).
+
+4) How long in minutes is the Leftism album you added in Question 3? Hint: use the
+SUM() aggregate function.
+
+5) Change the time for the Original track on the Leftism album to 6.22.
+
