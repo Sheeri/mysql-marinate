@@ -1,6 +1,6 @@
 If you can see this locally, you have completed half the homework so far.
 If you like, you can go to 
-https://badgus-dev.allizom.org/en-US/
+https://badges-dev.allizom.org/en-US/
 to claim your badge for successfully checking out the github repository.
 
 You will have to set up a BrowserID account if you want to claim your badge.
@@ -15,4 +15,5 @@ Do not forget to finish this week's homework - edit this file and put the
 name you use on meetup.com into this file:
 (your name here)
 
-Do not forget to do a pull request when your homework is complete.
+Do not forget to do a pull request when your homework is complete. 
+http://www.meetup.com/Virtual-Tech-Self-Study/messages/boards/thread/29963152/
