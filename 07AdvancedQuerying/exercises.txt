@@ -1,0 +1,39 @@
+Even though on page 238 the book says it does not matter if you put 
+JOIN conditions in ON or WHERE clauses, the advantage to putting them 
+in the ON clause is that it is easy to see if you missed a JOIN clause. 
+It is also required in some outer join situations (LEFT or RIGHT joins).
+
+For these exercises, use the "music" database.
+
+1) Write a JOIN query that displays the name of each artist and the albums
+they've made. Alongside the album, display the number of tracks on the album.
+
+2) Repeat Question 1, but now display only those albums that have more
+than 10 tracks
+
+3) Repeat Question 1, but write it as a nested query.
+
+4) What are the four types of nested queries? For each type, write a sample
+query on the music database. Try to use different keywords in each query,
+selecting from ANY, ALL, EXISTS (or NOT EXISTS) and IN (or NOT IN).
+
+5) What is the difference between an INNER JOIN, a LEFT JOIN, and a RIGHT
+JOIN? Does the the order of tables matter in an INNER JOIN? Why or why not?
+
+6) Why do these queries give different results? What does this tell you
+about using join conditions in the ON clause versus in the JOIN clause
+for LEFT (and RIGHT) JOINs?
+
+SELECT track_name, track.artist_id, COUNT(played) 
+FROM track 
+LEFT JOIN played ON (track.artist_id=played.artist_id 
+          AND track.album_id=played.album_id) 
+WHERE track.artist_id=3 
+GROUP BY track_name;
+
+SELECT track_name, track.album_id, COUNT(played) 
+FROM track 
+LEFT JOIN played ON (track.artist_id=played.artist_id) 
+WHERE track.album_id=played.album_id 
+      AND track.artist_id=3 
+GROUP BY track_name;
