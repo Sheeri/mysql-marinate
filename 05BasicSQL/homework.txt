@@ -1,13 +1,18 @@
 All exercises here concern the music database, which is available at 
 http://tahaghoghi.com/LearningMySQL/Downloads/Files/Data/SQL_files_with_foreign_key_references/music.sql
 
-I strongly recommend theta join style as per 
-http://code.openark.org/blog/mysql/mysql-joins-on-vs-using-vs-theta-style - the nutshell is that Theta style is like this:
+I strongly recommend ANSI join style as per 
+http://code.openark.org/blog/mysql/mysql-joins-on-vs-using-vs-theta-style - 
+the nutshell is that Theta style is like this:
 
-SELECT ... FROM table1 INNER JOIN table2 WHERE field1=field2 AND filter=something;
+SELECT ... 
+FROM table1 INNER JOIN table2 
+WHERE field1=field2 AND filter=something;
 
 ANSI style is like this:
-SELECT ... FROM table1 INNER JOIN table2 ON (field1=field2) WHERE filter=something;
+SELECT ... 
+FROM table1 INNER JOIN table2 ON (field1=field2) 
+WHERE filter=something;
 
 The reason for this is that when you have many tables joined 
 it's easier to see the join clause in ON or USING with ANSI style. 
