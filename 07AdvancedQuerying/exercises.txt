@@ -21,7 +21,7 @@ selecting from ANY, ALL, EXISTS (or NOT EXISTS) and IN (or NOT IN).
 JOIN? Does the the order of tables matter in an INNER JOIN? Why or why not?
 
 6) Why do these queries give different results? What does this tell you
-about using join conditions in the ON clause versus in the JOIN clause
+about using join conditions in the ON clause versus in the WHERE clause
 for LEFT (and RIGHT) JOINs?
 
 SELECT track_name, track.artist_id, COUNT(played) 
@@ -29,11 +29,11 @@ FROM track
 LEFT JOIN played ON (track.artist_id=played.artist_id 
           AND track.album_id=played.album_id) 
 WHERE track.artist_id=3 
-GROUP BY track_name;
+GROUP BY track_name,track.artist_id;
 
 SELECT track_name, track.album_id, COUNT(played) 
 FROM track 
 LEFT JOIN played ON (track.artist_id=played.artist_id) 
 WHERE track.album_id=played.album_id 
       AND track.artist_id=3 
-GROUP BY track_name;
+GROUP BY track_name,track.artist_id;
