@@ -1,0 +1,40 @@
+Exercises for chapter 9
+
+1) What’s the difference between a local and a remote user?
+
+2) When would you grant only read access to a user?
+
+3) Write a GRANT statement to create a user, rowena, who has privileges to execute 
+SELECT, UPDATE, and INSERT statements on the contacts and appointment databases. 
+The user should be allowed to access the server from machines in the domain invyhome.com.
+
+4) Write a GRANT statement that modifies the privileges of the user rowena created in 
+Question 3. Add privileges to SELECT from the customer table in the sales database, and to 
+SELECT the debtor column from the invoice table in the accounts database.
+
+5) Three GRANT statements have been issued on your MySQL server:
+
+ GRANT ALL ON *.* TO 'hugh'@'hugh.invyhome.com';
+ GRANT SELECT, UPDATE, INSERT, DELETE ON *.* TO 'hugh'@'*.invyhome.com';
+ GRANT SELECT ON *.* TO ''@'localhost';
+
+ For each of the following attempts to connect to the server, state whether the connection is allowed and, if so, which user the client is connected as. Assume all connections are attempted from localhost:
+
+     a) mysql --user=hugh --host=localhost
+
+     b) mysql --user=fred
+
+     c) mysql
+
+6) You’ve been employed to evaluate the security of a MySQL installation. Assuming that you’re 
+already satisfied with the security configuration from the physical and operating system 
+perspective, list four things that you’d check about the MySQL server. For each item, explain 
+why you would check it and what you would expect the outcome to be.
+
+7) You’ve recently installed a wireless access point for visitors to your office and configured 
+it so that machines that connect through it have IP addresses in the range 192.168.1.1 to 
+192.168.1.254. You’ve decided you want users who connect to your MySQL server from those IP 
+addresses to have only the SELECT privilege on the contacts database. What steps do you take 
+in your MySQL privilege tables to set this up?
+
+
