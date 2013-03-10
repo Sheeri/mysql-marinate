@@ -1,0 +1,13 @@
+Exercises for Chapter 10
+
+1) SQL dump files are often very large; why is this generally not a cause for worry?
+
+2) Set up a weekly backup of all databases on your server.
+
+3) For a production server, what time would you choose for your regular backups?
+
+4) How can you recover modifications that have been made to your data since the last dump?
+
+5) For an application where any loss of data is unacceptable, how would you choose the 
+location of your binary logfile?
+
