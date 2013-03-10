@@ -11,3 +11,27 @@ Exercises for Chapter 10
 5) For an application where any loss of data is unacceptable, how would you choose the 
 location of your binary logfile?
 
+Optional exercises - you do not have to do any of these, but if you want to, you can do
+any or all of them. They are not progressive, so you can do #7 and not #6 if you want.
+
+6) Listen to the 42-minute podcast about backup terminology at http://bit.ly/oursql030  
+The podcast can be downloaded for offline play
+
+7) myisamhotcopy is the way the book mentions to do a physical backup - that is, make a 
+physical copy of the files, instead of having to make sql exports with mysqldump. Exports 
+need to be imported, so restore time is greater. Also, this method only works when you have 
+MyISAM only tables, and that is not recommended!
+
+The current standard method of making physical backups is with a third-party tool called 
+Xtrabackup. There is no good Windows version of this, so if you only have Windows to test, 
+this will not work for you. However, if you have access to a non-Windows machine that has 
+MySQL installed and want real-world practice backing up MySQL with the standard tool to make 
+physical backups, I encourage you to:
+
+Download/install xtrabackup - see http://www.percona.com/doc/percona-xtrabackup/installation.html
+Make a backup using xtrabackup or innobackupex. You can make a local or streaming backup (the 
+streaming backup will copy to a remote server, which is used when there is not enough disk space 
+to hold the database and its backup. It is also used when you want to use the backup on a 
+different server, like when you are making a slave). You can use one of the recipes at 
+http://www.percona.com/doc/percona-xtrabackup/how-tos.html
+Restore the backup to test how it works. See http://www.percona.com/doc/percona-xtrabackup/how-tos.html
