@@ -1,0 +1,15 @@
+1) Why is it important to allocate a large value to read_buffer_size?
+
+2) What is the advantage of caching query results?
+
+3) What does the OPTIMIZE TABLE command do?
+
+4) If you set read_buffer_size too large, what do you think would happen?
+
+5) Set the slow query log on and set the long_query_time to 1. Run the following query:
+
+SELECT SLEEP(2);
+
+and paste what appears in the slow query log. If you need help setting up the slow query log,
+see http://dev.mysql.com/doc/refman/5.5/en/slow-query-log.html. By now you should be familiar enough
+with MySQL concepts to be able to read the manual pages and understand what is being written.

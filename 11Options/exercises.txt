@@ -1,0 +1,8 @@
+1) What issues would you consider before storing your password in an options file?
+
+2) On a Linux or Mac OS X system, under what circumstances would the [server] section
+of the ~/.my.cn options file be read?
+
+3) How can you tell what options a program uses by default?
+
+
