@@ -15,7 +15,7 @@ SELECT the debtor column from the invoice table in the accounts database.
 5) Three GRANT statements have been issued on your MySQL server:
 
  GRANT ALL ON *.* TO 'hugh'@'hugh.invyhome.com';
- GRANT SELECT, UPDATE, INSERT, DELETE ON *.* TO 'hugh'@'*.invyhome.com';
+ GRANT SELECT, UPDATE, INSERT, DELETE ON *.* TO 'hugh'@'%invyhome.com';
  GRANT SELECT ON *.* TO ''@'localhost';
 
  For each of the following attempts to connect to the server, state whether the connection is allowed and, if so, which user the client is connected as. Assume all connections are attempted from localhost:
