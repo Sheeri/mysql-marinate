@@ -6,9 +6,9 @@
 
 3. Alter and extend the music database ER model so that it can store 
 compilations, where a compilation is an album that contains tracks by two 
-or more different artists.
+or more different artists. Explain what you changed and why.
 
-4. Create an ER diagram for an online media store using the following requirements:
+4. Create an ER diagram for an online media store and explain your choices (e.g. why did you make X an entity and Y a relationship) using the following requirements:
  - There are two types of product: music CDs and video DVDs.
  - Customers can buy any number of each product.
  - For each CD, store the title, the artist’s name, the label (publisher), 
