@@ -4,7 +4,7 @@ Exercises:
 1) What is command completion?
 
 2) What are the relative advantages of installing MySQL using the package,
- directory archive (tarball or "no-install", or compiled methods?
+ directory archive (tarball or "no-install"), or compiled methods?
 
 3) How do you verify the integrity of downloaded packages?
 
@@ -17,3 +17,4 @@ Additional Exercises (not in the book):
 2) Document where important files should be.
 
 Do not forget to do a pull request when your homework is complete.
+http://www.meetup.com/Virtual-Tech-Self-Study/messages/boards/thread/29963152/
