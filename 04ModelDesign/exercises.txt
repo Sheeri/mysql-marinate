@@ -62,3 +62,5 @@ The .odg file was created on Open Office, but all compatibile programs can be se
 http://www.fileinfo.com/extension/odg
 
 Or you can just hand-draw diagrams for questions 3 and 4 and take a picture, as in the Diagram4_11.jpg file.
+
+DO NOT USE MySQL Workbench for these diagrams. Those are not true E-R diagrams with proper symbols and notation.
