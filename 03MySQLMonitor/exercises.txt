@@ -2,8 +2,12 @@
 
 2. Use the monitor help to look up information on the SELECT statement. (We’ll discuss SELECT in detail in Chapter 5.)
 
-3. What is the difference between using the monitor in interactive mode and using
-the monitor in batch mode?
+3. What is the difference between using the monitor in interactive mode and using the monitor in batch mode?
 
 4. What do the monitor user, password, and database options do?
 
+5. Explain what each of the characters at the end of SHOW DATABASES does by explaining the output of:
+ a. SHOW DATABASES;
+ b. SHOW DATABASES\G
+ c. SHOW DATABASES\c
+ d. SHOW DATABASES\q
