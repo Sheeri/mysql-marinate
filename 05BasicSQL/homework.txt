@@ -46,4 +46,10 @@ SUM() aggregate function.
 
 5) Change the time for the Original track on the Leftism album to 6.22.
 
-6) Remove the 'Bonus Track' from the Leftism album,
+6) Remove the 'Bonus Track' from the Leftism album.
+
+7) Explore the INFORMATION_SCHEMA database.
+   a) What does the TABLES table show?
+   b) What does the COLUMNS table show?
+   c) What does the STATISTICS table show?
+   d) What does the USER_STATISTICS table show?
